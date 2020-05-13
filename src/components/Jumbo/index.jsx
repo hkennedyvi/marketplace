@@ -10,7 +10,7 @@ const useStyles = makeStyles((theme) => ({
         backgroundColor: "white",
         height: "500px",
         width: "100%",
-        borderRadius: "1em",
+        // borderRadius: "1em",
         marginTop: "100px",
         // boxShadow: "5px 5px"
     },
@@ -22,7 +22,12 @@ function Jumbo() {
 
     return (
         <Container className={classes.root}>
-            <Typography component="div" />
+            <Typography component="div" variant="h1" >
+                Hello 
+            </Typography>
+            <div>
+                <img src={StaplerIcon} alt="stapler"  />
+            </div>
         </Container>
     );
 }

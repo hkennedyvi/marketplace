@@ -22,6 +22,8 @@ const useStyles = makeStyles((theme) => ({
     },
     title: {
         flexGrow: 1,
+        textAlign: "center",
+        size: "50px"
     },
 }));
 
@@ -35,7 +37,7 @@ function NavBar() {
                     <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
                         <MenuIcon />
                     </IconButton>
-                    <Typography variant="h6" className={classes.title}>
+                    <Typography variant="h4" className={classes.title}>
                         VINCE'S STAPLES
                     </Typography>
                     <Button color="inherit">
