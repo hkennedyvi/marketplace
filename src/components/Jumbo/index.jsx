@@ -7,7 +7,8 @@ import StaplerIcon from './assets/stapler-80.png';
 const useStyles = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
-        backgroundColor: "white",
+        backgroundColor: "transparent",
+        color: "white",
         height: "500px",
         width: "100%",
         // borderRadius: "1em",
@@ -23,7 +24,7 @@ function Jumbo() {
     return (
         <Container className={classes.root}>
             <Typography component="div" variant="h1" >
-                Hello 
+                Hello. Need supplies? 
             </Typography>
             <div>
                 <img src={StaplerIcon} alt="stapler"  />

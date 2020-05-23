@@ -1,7 +1,15 @@
-import React, {useState} from 'react';
-import Jumbo from '../components/Jumbo'
+import React, {useState, useEffect} from 'react';
+import API from "../utils/API";
+import Jumbo from '../components/Jumbo';
 
 function Home () {
+
+    useEffect(() => {
+        API.getProducts().then(res => {
+            console.log(res);
+        })
+    }, [])
+
     return (
         <div>
             <Jumbo />
