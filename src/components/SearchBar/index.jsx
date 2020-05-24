@@ -1,8 +1,13 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
+import Grid from '@material-ui/core/Grid';
+import Paper from '@material-ui/core/Paper';
 import SearchIcon from '@material-ui/icons/Search';
 
 const useStyles = makeStyles((theme) => ({
+    form: {
+        textAlign: "center"
+    },
     field: {
         background: "transparent",
         color: "white",
@@ -11,7 +16,6 @@ const useStyles = makeStyles((theme) => ({
         fontSize: "45px",
         border: "2px solid hotpink",
         borderRadius: "0.75em",
-        margin: "0 0 0 125px",
         padding: "5px 0 10px 20px"
     },
     button: {
@@ -32,14 +36,27 @@ function SearchBar() {
     const classes = useStyles();
 
     return (
-        <div>
-            <form>
-            <input type="text" placeholder="Search..." className={classes.field}></input>
-            <button className={classes.button}>
-            <SearchIcon className={classes.icon}/>
-            </button>
-            </form>
+        <div className={classes.root}>
+            <Grid container spacing={3}>
+                <Grid item xs={12}>
+                    {/* <Paper className={classes.paper}>xs=12</Paper> */}
+                    <form className={classes.form}>
+                        <input type="text" placeholder="Search..." className={classes.field}></input>
+                        <button className={classes.button}>
+                            <SearchIcon className={classes.icon} />
+                        </button>
+                    </form>
+                </Grid>
+            </Grid>
         </div>
+        // <div>
+        //     <form>
+        //     <input type="text" placeholder="Search..." className={classes.field}></input>
+        //     <button className={classes.button}>
+        //     <SearchIcon className={classes.icon}/>
+        //     </button>
+        //     </form>
+        // </div>
     );
 }
 
