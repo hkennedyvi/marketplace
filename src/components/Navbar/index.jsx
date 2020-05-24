@@ -16,6 +16,7 @@ const useStyles = makeStyles((theme) => ({
     menuBar: {
         backgroundColor: "mediumturquoise",
         color: "black",
+        height: "70px"
     },
     menuButton: {
         marginRight: theme.spacing(2),

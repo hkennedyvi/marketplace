@@ -9,7 +9,7 @@ const useStyles = makeStyles((theme) => ({
         flexGrow: 1,
         backgroundColor: "transparent",
         color: "white",
-        height: "500px",
+        // height: "500px",
         width: "100%",
         // borderRadius: "1em",
         marginTop: "100px",
