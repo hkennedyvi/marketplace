@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import API from "../utils/API";
 import Jumbo from '../components/Jumbo';
 import SearchBar from  '../components/SearchBar';
-import Grid from '../components/Grid';
+import InfoGrid from '../components/InfoGrid';
 
 function Home () {
 
@@ -15,7 +15,7 @@ function Home () {
     return (
         <div>
             <Jumbo />
-            <Grid />
+            <InfoGrid />
             <SearchBar />
         </div>
     )

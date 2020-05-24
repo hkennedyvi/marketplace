@@ -18,7 +18,8 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function FullWidthGrid() {
+function InfoGrid() {
+
   const classes = useStyles();
 
   return (
@@ -46,3 +47,5 @@ export default function FullWidthGrid() {
     </div>
   );
 }
+
+export default InfoGrid;
