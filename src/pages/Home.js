@@ -3,6 +3,7 @@ import API from "../utils/API";
 import Jumbo from '../components/Jumbo';
 import SearchBar from  '../components/SearchBar';
 import InfoGrid from '../components/InfoGrid';
+import ProductCard from '../components/ProductCard';
 
 function Home () {
 
@@ -17,6 +18,7 @@ function Home () {
             <Jumbo />
             <InfoGrid />
             <SearchBar />
+            <ProductCard />
         </div>
     )
 }
