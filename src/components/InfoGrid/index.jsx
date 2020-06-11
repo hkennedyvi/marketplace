@@ -3,6 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
+import vinceImg from './assets/vince_staples.jpg';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -16,6 +17,9 @@ const useStyles = makeStyles((theme) => ({
     color: "hotpink",
     fontFamily: "helvetica",
   },
+  image: {
+    width: "100%"
+  }
 }));
 
 function InfoGrid() {
@@ -27,19 +31,22 @@ function InfoGrid() {
       <Grid container spacing={3}>
         <Grid item xs={12} sm={6}>
           <Paper className={classes.paper}>
-              <Typography variant="h4">
+            <div>
+              <img className={classes.image} src={vinceImg} alt="vince" />
+            </div>
+            {/* <Typography variant="h4">
                 Vince's Staples is the premier source of office supplies.
                 We make it easy for you to stock every inch of your storage
                 with top of the line supplies.  
-              </Typography>
+              </Typography> */}
           </Paper>
         </Grid>
         <Grid item xs={12} sm={6}>
-        <Paper className={classes.paper}>
-              <Typography variant="h4">
-                Vince's Staples is the premier source of office supplies.
-                We make it easy for you to stock every inch of your storage
-                with top of the line supplies.  
+          <Paper className={classes.paper}>
+            <Typography variant="h4">
+              Vince's Staples is the premier source of office supplies.
+              We make it easy for you to stock every inch of your storage
+              with top of the line supplies.
               </Typography>
           </Paper>
         </Grid>
