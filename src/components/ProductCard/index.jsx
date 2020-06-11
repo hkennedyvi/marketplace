@@ -12,14 +12,23 @@ import Typography from '@material-ui/core/Typography';
 const useStyles = makeStyles({
     root: {
         maxWidth: 345,
-        border: "solid 5px black"
+        border: "solid 3px black"
     },
-    cardTop: {
-        borderTop: "solid 5px black",
-        backgroundColor: "lightgrey"
+    cardHeader : {
+        color: "white",
+        fontWeight: "bold"
+    },
+    cardBody: {
+        backgroundColor: "black",
+        color: "mediumturquoise",
     },
     cardBottom: {
-        backgroundColor: "white"
+        backgroundColor: "black",
+    },
+    cardIcon: {
+        color: "hotpink",
+        border: "solid 1px mediumturquoise",
+        borderRadius: "0.5em"
     }
 });
 
@@ -35,19 +44,19 @@ export default function ImgMediaCard() {
                 image="https://www.gannett-cdn.com/-mm-/b2b05a4ab25f4fca0316459e1c7404c537a89702/c=0-0-1365-768/local/-/media/2018/06/19/USATODAY/usatsports/ibm-thinkpad-notebook-1992.jpg"
                 title="Contemplative Reptile"
             />
-            <CardContent className={classes.cardTop}>
-                <Typography gutterBottom variant="h5" component="h2">
+            <CardContent className={classes.cardBody}>
+                <Typography gutterBottom className={classes.cardHeader} variant="h5" component="h2">
                     Computer
           </Typography>
-                <Typography variant="body2" color="textSecondary" component="p">
+                <Typography variant="body2" component="p">
                     This is a wonderful computer don't you agree? Give it a try!
           </Typography>
             </CardContent>
             <CardActions className={classes.cardBottom}>
-                <IconButton color="primary" aria-label="add to shopping cart">
+                <IconButton className={classes.cardIcon} aria-label="add to shopping cart">
                     <AddShoppingCartIcon />
                 </IconButton>
-                <IconButton color="primary" aria-label="add to shopping cart">
+                <IconButton className={classes.cardIcon} aria-label="add to shopping cart">
                     <VisibilityIcon />
                 </IconButton>
             </CardActions>
