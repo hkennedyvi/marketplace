@@ -7,7 +7,7 @@ const useStyles = makeStyles((theme) => ({
     form: {
         textAlign: "center"
     },
-    field: {
+    searchField: {
         background: "transparent",
         color: "white",
         width: "80%",
@@ -17,12 +17,12 @@ const useStyles = makeStyles((theme) => ({
         borderRadius: "0.75em",
         padding: "5px 0 10px 20px"
     },
-    button: {
+    searchButton: {
         background: "transparent",
         border: "solid hotpink 2px",
         borderRadius: "5em",
         position: "absolute",
-        margin: "0 -78px"
+        margin: "0 -78px",
     },
     icon: {
         fontSize: "60px",
@@ -34,13 +34,17 @@ function SearchBar() {
 
     const classes = useStyles();
 
+    function onSearch(e) {
+        e.preventDefault();
+    }
+
     return (
         <div className={classes.root}>
             <Grid container spacing={3}>
                 <Grid item xs={12}>
                     <form className={classes.form}>
-                        <input type="text" placeholder="Search..." className={classes.field}></input>
-                        <button className={classes.button}>
+                        <input id="searchField" type="text" placeholder="Search..." className={classes.searchField}></input>
+                        <button id="searchBtn" className={classes.searchButton} onClick={onSearch}>
                             <SearchIcon className={classes.icon} />
                         </button>
                     </form>

@@ -3,6 +3,10 @@ body {
 
 }
 
+#searchField:focus, #searchBtn:focus {
+    outline: none;
+}
+
 html, body {
 /* Google fonts hasn't imported properly, link is in public/index.html */
     /* font-family: 'Yellowtail', cursive; */
