@@ -34,11 +34,6 @@ function InfoGrid() {
             <div>
               <img className={classes.image} src={vinceImg} alt="vince" />
             </div>
-            {/* <Typography variant="h4">
-                Vince's Staples is the premier source of office supplies.
-                We make it easy for you to stock every inch of your storage
-                with top of the line supplies.  
-              </Typography> */}
           </Paper>
         </Grid>
         <Grid item xs={12} sm={6}>

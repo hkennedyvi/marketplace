@@ -11,7 +11,7 @@ import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles({
     root: {
-        maxWidth: 345,
+        maxWidth: "100%",
         border: "solid 3px black"
     },
     cardHeader : {
