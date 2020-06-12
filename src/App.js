@@ -17,7 +17,7 @@ function App() {
             <Home />
           </Route>
           <Route exact path="/profile">
-            <NavBar />
+            {/* <NavBar /> */}
             <Profile />
           </Route>
         </Switch>

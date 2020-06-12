@@ -1,5 +1,5 @@
 import React from 'react';
-
+import ShoppingCart from '../components/ShoppingCart';
 
 function Profile () {
 
@@ -7,8 +7,7 @@ function Profile () {
 
     return (
         <div>
-            cart
-            <h1>hiii</h1>
+            <ShoppingCart />
         </div>
     )
 }
