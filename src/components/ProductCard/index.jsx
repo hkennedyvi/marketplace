@@ -5,9 +5,9 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import IconButton from '@material-ui/core/IconButton';
-import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
 import VisibilityIcon from '@material-ui/icons/Visibility';
 import Typography from '@material-ui/core/Typography';
+import ConfirmDialogSlide from '../ConfirmDialog';
 
 const useStyles = makeStyles({
     root: {
@@ -25,7 +25,7 @@ const useStyles = makeStyles({
     cardBottom: {
         backgroundColor: "black",
     },
-    cardIcon: {
+    cardBtn: {
         color: "hotpink",
         border: "solid 1px mediumturquoise",
         borderRadius: "0.5em"
@@ -53,10 +53,8 @@ export default function ImgMediaCard() {
           </Typography>
             </CardContent>
             <CardActions className={classes.cardBottom}>
-                <IconButton className={classes.cardIcon} aria-label="add to shopping cart">
-                    <AddShoppingCartIcon />
-                </IconButton>
-                <IconButton className={classes.cardIcon} aria-label="add to shopping cart">
+                <ConfirmDialogSlide />
+                <IconButton className={classes.cardBtn} aria-label="add to shopping cart">
                     <VisibilityIcon />
                 </IconButton>
             </CardActions>
