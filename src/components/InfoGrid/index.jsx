@@ -11,11 +11,12 @@ const useStyles = makeStyles((theme) => ({
   },
   paper: {
     // padding: theme.spacing(2),
-    padding: "50px",
+    padding: "20px",
     textAlign: "start",
     backgroundColor: "transparent",
     color: "hotpink",
     fontFamily: "helvetica",
+    "box-shadow": "none"
   },
   image: {
     width: "100%"
@@ -29,14 +30,14 @@ function InfoGrid() {
   return (
     <div className={classes.root}>
       <Grid container spacing={3}>
-        <Grid item xs={12} sm={6}>
+        <Grid item xs={12} sm={12} md={6}>
           <Paper className={classes.paper}>
             <div>
               <img className={classes.image} src={vinceImg} alt="vince" />
             </div>
           </Paper>
         </Grid>
-        <Grid item xs={12} sm={6}>
+        <Grid item xs={12} sm={12} md={6}>
           <Paper className={classes.paper}>
             <Typography variant="h4">
               Vince's Staples is the premier source of office supplies.
