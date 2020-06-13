@@ -36,6 +36,7 @@ export default function ImgMediaCard() {
     const classes = useStyles();
 
     return (
+        // Need to fix the comma seperated classes
         <Card className={classes.root, "resultCard"}>
             <CardMedia
                 component="img"
