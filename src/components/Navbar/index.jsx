@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -14,6 +14,11 @@ const useStyles = makeStyles((theme) => ({
         flexGrow: 1,
     },
     menuBar: {
+        backgroundColor: "black",
+        color: "white",
+        height: "70px"
+    },
+    menuBarTrans: {
         backgroundColor: "mediumturquoise",
         color: "black",
         height: "70px"
@@ -29,11 +34,23 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function NavBar() {
+    const [navbarTrans, setNavbarTrans] = useState(true);
     const classes = useStyles();
+
+    useEffect(() => {
+        window.addEventListener("scroll", () => {
+            let viewPosition = window.scrollY;
+            if (viewPosition > 510) {
+                setNavbarTrans(false);
+            } else {
+                setNavbarTrans(true);
+            }
+        })
+    }, [])
 
     return (
         <div className={classes.root}>
-            <AppBar className={classes.menuBar} position="fixed">
+            <AppBar className={navbarTrans ? classes.menuBar : classes.menuBarTrans} position="fixed">
                 <Toolbar>
                     <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
                         <MenuIcon />
