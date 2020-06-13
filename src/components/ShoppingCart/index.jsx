@@ -12,7 +12,6 @@ import RemoveCircleIcon from '@material-ui/icons/RemoveCircle';
 import Typography from '@material-ui/core/Typography';
 import DeleteIcon from '@material-ui/icons/Delete';
 
-
 const useStyles = makeStyles((theme) => ({
     root: {
         display: 'flex',
@@ -30,17 +29,24 @@ const useStyles = makeStyles((theme) => ({
     controls: {
         backgroundColor: "black",
         border: "black solid 2px",
-        float: "right"
+        textAlign: "right"
     },
     button: {
         backgroundColor: "black",
         color: "hotpink",
-        border: "1px mediumturquoise solid"
+
     },
     cover: {
         width: "50%",
     },
-
+    numberInput: {
+        backgroundColor: "black",
+        color: "mediumturquoise",
+        width: 30,
+        height: 30,
+        outline: "none",
+        textAlign: "center",
+    }
 }));
 
 function ShoppingCart() {
@@ -75,14 +81,17 @@ function ShoppingCart() {
           </Typography>
                             </CardContent>
                             <div className={classes.controls}>
-                            <IconButton className={classes.button} aria-label="previous">
+                                <IconButton className={classes.button} aria-label="previous">
                                     <AddCircleIcon />
                                 </IconButton>
-                                <IconButton className={classes.button}  aria-label="play/pause">
+                                <input className={classes.numberInput} >
+
+                                </input>
+                                <IconButton className={classes.button} aria-label="play/pause">
                                     <RemoveCircleIcon />
                                 </IconButton>
-                                <IconButton className={classes.button}  aria-label="delete">
-                                    <DeleteIcon  />
+                                <IconButton className={classes.button} aria-label="delete">
+                                    <DeleteIcon />
                                 </IconButton>
                             </div>
                         </div>
@@ -110,14 +119,14 @@ function ShoppingCart() {
           </Typography>
                             </CardContent>
                             <div className={classes.controls}>
-                            <IconButton className={classes.button} aria-label="previous">
+                                <IconButton className={classes.button} aria-label="previous">
                                     <AddCircleIcon />
                                 </IconButton>
-                                <IconButton className={classes.button}  aria-label="play/pause">
+                                <IconButton className={classes.button} aria-label="play/pause">
                                     <RemoveCircleIcon />
                                 </IconButton>
-                                <IconButton className={classes.button}  aria-label="delete">
-                                    <DeleteIcon  />
+                                <IconButton className={classes.button} aria-label="delete">
+                                    <DeleteIcon />
                                 </IconButton>
                             </div>
                         </div>
@@ -145,14 +154,14 @@ function ShoppingCart() {
           </Typography>
                             </CardContent>
                             <div className={classes.controls}>
-                            <IconButton className={classes.button} aria-label="previous">
+                                <IconButton className={classes.button} aria-label="previous">
                                     <AddCircleIcon />
                                 </IconButton>
-                                <IconButton className={classes.button}  aria-label="play/pause">
+                                <IconButton className={classes.button} aria-label="play/pause">
                                     <RemoveCircleIcon />
                                 </IconButton>
-                                <IconButton className={classes.button}  aria-label="delete">
-                                    <DeleteIcon  />
+                                <IconButton className={classes.button} aria-label="delete">
+                                    <DeleteIcon />
                                 </IconButton>
                             </div>
                         </div>
