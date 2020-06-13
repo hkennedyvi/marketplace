@@ -5,6 +5,14 @@ body {
 
 #searchField:focus, #searchBtn:focus {
     outline: none;
+    background-color: white;
+    color: black;
+    border: 3px mediumturquoise solid;
+}
+
+.resultCard:hover {
+    border: 1px hotpink solid;
+    cursor: pointer;
 }
 
 html, body {

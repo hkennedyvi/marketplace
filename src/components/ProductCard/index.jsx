@@ -36,7 +36,7 @@ export default function ImgMediaCard() {
     const classes = useStyles();
 
     return (
-        <Card className={classes.root}>
+        <Card className={classes.root, "resultCard"}>
             <CardMedia
                 component="img"
                 alt="product"
