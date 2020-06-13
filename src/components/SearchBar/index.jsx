@@ -8,18 +8,18 @@ const useStyles = makeStyles((theme) => ({
         textAlign: "center"
     },
     searchField: {
-        background: "transparent",
+        background: "black",
         color: "white",
         width: "80%",
         height: "50px",
         fontSize: "45px",
-        border: "2px solid hotpink",
+        border: "3px solid hotpink",
         borderRadius: "0.75em",
         padding: "5px 0 10px 20px"
     },
     searchButton: {
         background: "transparent",
-        border: "solid hotpink 2px",
+        border: "3px solid hotpink",
         borderRadius: "5em",
         position: "absolute",
         margin: "0 -78px",
