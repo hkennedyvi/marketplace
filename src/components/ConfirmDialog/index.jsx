@@ -15,7 +15,7 @@ import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
 const useStyles = makeStyles({
   root: {
     backgroundColor: "hotpink",
-    color: "white"
+    color: "white",
   },
   shopBtn: {
     color: "hotpink",

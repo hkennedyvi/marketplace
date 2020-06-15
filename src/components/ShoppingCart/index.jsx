@@ -19,6 +19,11 @@ const useStyles = makeStyles((theme) => ({
         color: "white",
         border: "black solid 1px"
     },
+    header: {
+        backgroundColor: "mediumturquoise",
+        width:"100%",
+        padding: "10px"
+    },
     details: {
         display: 'flex',
         flexDirection: 'column',
@@ -34,7 +39,6 @@ const useStyles = makeStyles((theme) => ({
     button: {
         backgroundColor: "black",
         color: "hotpink",
-
     },
     cover: {
         width: "50%",
@@ -58,10 +62,20 @@ function ShoppingCart() {
             <Grid container
                 direction="column"
                 justify="center"
-                alignItems="center"
+                alignItems="left"
                 spacing={3}
             >
-                <Grid container item xs={6} spacing={3}>
+                <Grid container item xs={12} sm={12} md={6} lg={6} spacing={3}>
+                    <Paper className={classes.header}>
+                <Typography variant="h2">
+                    MY CART
+                    </Typography>
+                    </Paper>
+                </Grid>
+                <Grid container item xs={12} sm={12} md={6} lg={6} spacing={3}>
+                
+                   
+                   
                     {/* <Paper> */}
                     <Card className={classes.root}>
                         <CardMedia
@@ -99,7 +113,7 @@ function ShoppingCart() {
                     </Card>
                     {/* </Paper> */}
                 </Grid>
-                <Grid container item xs={6} spacing={3}>
+                <Grid container item xs={12} sm={12} md={6} lg={6} spacing={3}>
                     {/* <Paper> */}
                     <Card className={classes.root}>
                         <CardMedia
@@ -134,7 +148,7 @@ function ShoppingCart() {
                     </Card>
                     {/* </Paper> */}
                 </Grid>
-                <Grid container item xs={6} spacing={3}>
+                <Grid container item xs={12} sm={12} md={6} lg={6} spacing={3}>
                     {/* <Paper> */}
                     <Card className={classes.root}>
                         <CardMedia
