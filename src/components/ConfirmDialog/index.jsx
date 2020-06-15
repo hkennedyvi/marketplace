@@ -14,21 +14,18 @@ import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
 
 const useStyles = makeStyles({
   root: {
-    backgroundColor: "mediumturquoise",
-    color: "black"
+    backgroundColor: "hotpink",
+    color: "white"
   },
   shopBtn: {
     color: "hotpink",
     border: "solid 1px mediumturquoise",
     borderRadius: "0.5em"
   },
-  thumbUpBtn: {
+  thumbBtn: {
     backgroundColor: "black",
-    color: "hotpink"
-  },
-  thumbDownBtn: {
-    backgroundColor: "black",
-    color: "hotpink"
+    color: "mediumturquoise",
+    border: "solid 1px mediumturquoise"
   }
 });
 
@@ -70,10 +67,10 @@ export default function ConfirmDialogSlide() {
           </DialogContentText>
         </DialogContent>
         <DialogActions className={classes.root}>
-          <Button className={classes.thumbDownBtn} onClick={handleClose} >
+          <Button className={classes.thumbBtn} onClick={handleClose} >
             <ThumbDownIcon />
           </Button>
-          <Button className={classes.thumbUpBtn} onClick={handleClose} >
+          <Button className={classes.thumbBtn} onClick={handleClose} >
             <ThumbUpIcon />
           </Button>
         </DialogActions>
