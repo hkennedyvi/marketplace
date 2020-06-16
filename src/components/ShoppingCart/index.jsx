@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import Card from '@material-ui/core/Card';
-import CardActions from '@material-ui/core/CardActions';
+// import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import IconButton from '@material-ui/core/IconButton';
@@ -11,6 +11,7 @@ import AddCircleIcon from '@material-ui/icons/AddCircle';
 import RemoveCircleIcon from '@material-ui/icons/RemoveCircle';
 import Typography from '@material-ui/core/Typography';
 import DeleteIcon from '@material-ui/icons/Delete';
+import MenuPopper from '../MenuPopper';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -22,7 +23,10 @@ const useStyles = makeStyles((theme) => ({
     header: {
         backgroundColor: "mediumturquoise",
         width:"100%",
-        padding: "10px"
+        padding: "10px",
+        display: "flex",
+        flexDirection: "row",
+        justifyContent: "space-between"
     },
     details: {
         display: 'flex',
@@ -46,8 +50,8 @@ const useStyles = makeStyles((theme) => ({
     numberInput: {
         backgroundColor: "black",
         color: "mediumturquoise",
-        width: 30,
-        height: 30,
+        width: 20,
+        height: 20,
         outline: "none",
         textAlign: "center",
     }
@@ -70,6 +74,7 @@ function ShoppingCart() {
                 <Typography variant="h2">
                     MY CART
                     </Typography>
+                    <MenuPopper />
                     </Paper>
                 </Grid>
                 <Grid container item xs={12} sm={12} md={6} lg={6} spacing={3}>
