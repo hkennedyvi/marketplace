@@ -24,6 +24,9 @@ const useStyles = makeStyles({
     },
     cardBottom: {
         backgroundColor: "black",
+        display: "flex",
+        flexDirection: "row",
+        justifyContent: "flex-end"
     },
     cardBtn: {
         color: "hotpink",
