@@ -10,9 +10,6 @@ const useStyles = makeStyles((theme) => ({
     button: {
        backgroundColor: "black",
        color: "hotpink",
-       height: "45px",
-       width: "3px",
-       margin: "2% 0"
     },
     menu: {
         backgroundColor: "black",

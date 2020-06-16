@@ -71,7 +71,7 @@ function ShoppingCart() {
             >
                 <Grid container item xs={12} sm={12} md={6} lg={6} spacing={3}>
                     <Paper className={classes.header}>
-                <Typography variant="h2">
+                <Typography variant="h5">
                     MY CART
                     </Typography>
                     <MenuPopper />
