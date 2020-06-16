@@ -1,13 +1,13 @@
 import React from 'react';
-import ShoppingCart from '../components/ShoppingCart';
+import CartMain from '../components/CartMain';
 
-function Profile () {
+function Profile() {
 
-    
+
 
     return (
         <div>
-            <ShoppingCart />
+            <CartMain />
         </div>
     )
 }

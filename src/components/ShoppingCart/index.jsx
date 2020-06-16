@@ -21,9 +21,9 @@ const useStyles = makeStyles((theme) => ({
         border: "black solid 1px",
         margin: "2px 0"
     },
-    container: {
-        margin: "100px 0 0 20px"
-    },
+    // container: {
+    //     margin: "100px 0 0 20px"
+    // },
     header: {
         backgroundColor: "mediumturquoise",
         width:"100%",
@@ -74,7 +74,7 @@ function ShoppingCart() {
                 alignItems="left"
                 spacing={3}
             >
-                <Grid container item xs={12} sm={12} md={6} lg={6} spacing={3}>
+                <Grid container item xs={12} spacing={3}>
                     <Paper className={classes.header}>
                 <Typography variant="h5">
                     MY CART
@@ -82,7 +82,7 @@ function ShoppingCart() {
                     <MenuPopper />
                     </Paper>
                 </Grid>
-                <Grid container item xs={12} sm={12} md={6} lg={6} spacing={3}>
+                <Grid container item xs={12} spacing={3}>
                 
                    
                    
@@ -123,7 +123,7 @@ function ShoppingCart() {
                     </Card>
                     {/* </Paper> */}
                 </Grid>
-                <Grid container item xs={12} sm={12} md={6} lg={6} spacing={3}>
+                <Grid container item xs={12} spacing={3}>
                     {/* <Paper> */}
                     <Card className={classes.root}>
                         <CardMedia
@@ -158,7 +158,7 @@ function ShoppingCart() {
                     </Card>
                     {/* </Paper> */}
                 </Grid>
-                <Grid container item xs={12} sm={12} md={6} lg={6} spacing={3}>
+                <Grid container item xs={12} spacing={3}>
                     {/* <Paper> */}
                     <Card className={classes.root}>
                         <CardMedia
