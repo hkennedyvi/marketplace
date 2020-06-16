@@ -18,7 +18,11 @@ const useStyles = makeStyles((theme) => ({
         display: 'flex',
         backgroundColor: "black",
         color: "white",
-        border: "black solid 1px"
+        border: "black solid 1px",
+        margin: "2px 0"
+    },
+    container: {
+        margin: "100px 0 0 20px"
     },
     header: {
         backgroundColor: "mediumturquoise",
@@ -64,6 +68,7 @@ function ShoppingCart() {
     return (
         <div>
             <Grid container
+            className={classes.container}
                 direction="column"
                 justify="center"
                 alignItems="left"
