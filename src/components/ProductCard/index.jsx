@@ -20,7 +20,7 @@ const useStyles = makeStyles({
     },
     cardBody: {
         backgroundColor: "black",
-        color: "mediumturquoise",
+        color: "white",
     },
     cardBottom: {
         backgroundColor: "black",
